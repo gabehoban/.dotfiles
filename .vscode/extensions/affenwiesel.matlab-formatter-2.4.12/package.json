@@ -1,0 +1,66 @@
+{
+	"name": "matlab-formatter",
+	"displayName": "matlab-formatter",
+	"description": "format matlab code",
+	"version": "2.4.12",
+	"publisher": "AffenWiesel",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/affenwiesel/matlab-formatter-vscode"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"matlab"
+	],
+	"activationEvents": [
+		"onLanguage:matlab"
+	],
+	"main": "./extension",
+	"icon": "images/icon.png",
+	"contributes": {
+		"configuration": {
+			"title": "Matlab-formatter configuration",
+			"type": "object",
+			"properties": {
+				"matlab-formatter.indentwidth": {
+					"type": "integer",
+					"default": 4,
+					"description": "number of spaces used for indentation"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "matlab",
+				"aliases": [
+					"MATLAB"
+				]
+			}
+		],
+		"capabilities": {
+			"documentFormattingProvider": "true",
+			"documentRangeFormattingProvider": "true"
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"eslint": "^4.11.0",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "16f49f82-0071-4930-b6b5-b3e3ccd5fb0d",
+		"publisherId": "c3404b57-de97-47d7-8f81-b4955a94cc2e",
+		"publisherDisplayName": "AffenWiesel"
+	}
+}
