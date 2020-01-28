@@ -5,7 +5,7 @@ disqus.com:HSTS	0	18288	1580168956466,1,1,2
 howtogeek.disqus.com:HSTS	3	18288	1580101969964,1,1,2
 webbook.nist.gov:HSTS	0	18284	1611325696004,1,1,2
 app.birdsend.co:HSTS	0	18288	1595911057778,1,0,2
-avatars1.githubusercontent.com:HSTS	13	18288	1611726777283,1,0,2
+avatars1.githubusercontent.com:HSTS	13	18288	1611726873061,1,0,2
 www.uglifyjs.net:HSTS	0	18276	1610605530334,1,0,2
 uptime-com.disqus.com:HSTS	0	18276	1579097714680,1,1,2
 accounts.firefox.com:HSTS	1	18280	1611005745006,1,1,2
@@ -20,7 +20,7 @@ www.greenpromocode.com:HSTS	0	18285	1595430493571,1,1,2
 s-usc1c-nss-216.firebaseio.com:HSTS	0	18279	1610872873273,1,1,2
 cms-static.eweka.nl:HSTS	0	18285	1595438858754,1,1,2
 snippets.cdn.mozilla.net:HSTS	1	18276	1610633502280,1,0,2
-stackoverflow.com:HSTS	0	18288	1595721103239,1,0,2
+stackoverflow.com:HSTS	0	18288	1595721356406,1,0,2
 nzbgeek.info:HSTS	0	18285	1642952435022,1,1,2
 launchpad.net:HSTS	0	18278	1594795915319,1,0,2
 www.google-analytics.com:HSTS	11	18288	1590161874245,1,1,2
@@ -74,7 +74,7 @@ jldeen.disqus.com:HSTS	0	18279	1579319429437,1,1,2
 www.olympicchannel.com:HSTS	0	18279	1579380908954,1,0,2
 kinja-otfp.global.ssl.fastly.net:HSTS	1	18279	1579388417925,1,0,2
 app.groupme.com:HSTS	0	18279	2210522852348,1,0,2
-external-content.duckduckgo.com:HSTS	0	18288	1611705175166,1,0,2
+external-content.duckduckgo.com:HSTS	0	18288	1611705353838,1,0,2
 www.eweka.nl:HSTS	0	18285	1595438858540,1,1,2
 whatbox.ca:HSTS	0	18285	1611415136932,1,0,2
 9rltttntv970.statuspage.io:HSTS	0	18276	1579372201780,1,0,2
@@ -127,7 +127,7 @@ gitlab.freedesktop.org:HSTS	0	18285	1595578370781,1,0,2
 cdn.polyfill.io:HSTS	5	18285	1611422936285,1,1,2
 users.soe.ucsc.edu:HSTS	0	18276	1642130134263,1,1,2
 fhackts.wordpress.com:HSTS	0	18287	1595577713528,1,0,2
-avatars3.githubusercontent.com:HSTS	13	18288	1611726777284,1,0,2
+avatars3.githubusercontent.com:HSTS	13	18288	1611727107504,1,0,2
 4954221.fls.doubleclick.net:HSTS	3	18288	1580186924195,1,0,2
 haydenjames.io:HSTS	0	18281	1642612280996,1,1,2
 prod.msocdn.com:HSTS	0	18277	1642256482191,1,0,2
@@ -187,6 +187,7 @@ www.vagrantup.com:HSTS	0	18279	1610903901338,1,1,2
 atp-vim.sourceforge.io:HSTS	0	18278	1610781880046,1,0,2
 track.rtrt.me:HSTS	0	18284	1595349397374,1,1,2
 truenorthshop.com:HSTS	0	18276	1586941572887,1,0,2
+gist.github.com:HSTS	0	18288	1611705272524,1,1,2
 rec.ingka.com:HSTS	0	18276	1594871877820,1,0,2
 enrichment.api.drift.com:HSTS	0	18285	1611415146729,1,1,2
 app.hubspot.com:HSTS	0	18285	1611421374699,1,1,2
@@ -241,7 +242,7 @@ www.makeuseof.com:HSTS	2	18283	1611255973538,1,1,2
 amzn.to:HSTS	0	18276	1580312275557,1,0,2
 bestpractices.coreinfrastructure.org:HSTS	0	18285	2211016054017,1,1,2
 hello.typeform.com:HSTS	0	18276	1642119251993,1,1,2
-github.com:HSTS	0	18288	1611705177133,1,1,2
+github.com:HSTS	0	18288	1611705511027,1,1,2
 video-api.yql.yahoo.com:HSTS	0	18287	1595620259220,1,0,2
 um.simpli.fi:HSTS	0	18278	1642309332434,1,1,2
 app-updates.agilebits.com:HSTS	0	18275	1642046811763,1,1,2
@@ -275,7 +276,7 @@ assets.secure.checkout.visa.com:HSTS	0	18279	1610915862147,1,1,2
 1.www.s81c.com:HSTS	0	18280	1581990423646,1,0,2
 s.blogsmithmedia.com:HSTS	0	18276	1610636573838,1,0,2
 nakedsecurity.sophos.com:HSTS	0	18288	1611689903304,1,0,2
-duckduckgo.com:HSTS	0	18288	1611705209668,1,0,2
+duckduckgo.com:HSTS	0	18288	1611705353130,1,0,2
 javvadmalik.com:HSTS	0	18288	1580240720215,1,0,2
 specials-images.forbesimg.com:HSTS	0	18276	1579103561598,1,0,2
 flathub.org:HSTS	0	18288	1595924039608,1,0,2
@@ -492,10 +493,10 @@ www.redhat.com:HSTS	2	18287	1611109573359,1,0,2
 v0.wordpress.com:HSTS	0	18282	1595185242766,1,0,2
 knowtechie.disqus.com:HSTS	0	18276	1579099885471,1,1,2
 client.crisp.chat:HSTS	2	18285	1611413703588,1,1,2
-ac.duckduckgo.com^firstPartyDomain=ddg.search.suggestions.mozilla:HSTS	0	18288	1611705207391,1,0,2
+ac.duckduckgo.com^firstPartyDomain=ddg.search.suggestions.mozilla:HSTS	0	18288	1611705422978,1,0,2
 www.fossmint.com:HSTS	2	18288	1582747844234,1,1,2
 abcnewsdotcom.disqus.com:HSTS	0	18287	1580067850754,1,1,2
-avatars2.githubusercontent.com:HSTS	13	18288	1611726777284,1,0,2
+avatars2.githubusercontent.com:HSTS	13	18288	1611726873144,1,0,2
 bar.stunning.co:HSTS	0	18275	1581721825180,1,0,2
 cdn.pimylifeup.com:HSTS	0	18283	1611254764146,1,1,2
 bugs.debian.org:HSTS	1	18287	1595622713399,1,0,2
@@ -537,6 +538,7 @@ ganon.yahoo.com:HSTS	0	18276	1610636576330,1,0,2
 ct.yimg.com:HSTS	2	18284	1595304274984,1,0,2
 match.prod.bidr.io:HSTS	0	18278	1581864630687,1,1,2
 gozwift.api.kustomerapp.com:HSTS	0	18284	1611333718841,1,1,2
+images.duckduckgo.com:HSTS	0	18288	1611705263178,1,0,2
 external-ort2-2.xx.fbcdn.net:HSTS	0	18276	1610633307637,1,1,2
 core.spreedly.com:HSTS	0	18285	1611450779356,1,0,2
 i0.bloomjoy.systems:HSTS	0	18282	1611113799154,1,0,2
@@ -550,7 +552,7 @@ sailfish-spotify.github.io:HSTS	0	18287	1611587667551,1,0,2
 miktex.org:HSTS	0	18278	1581831957963,1,0,2
 goodfuckingdesignadvice.com:HSTS	0	18280	1587340482209,1,0,2
 edge.api.brightcove.com:HSTS	0	18288	1657916546388,1,1,2
-avatars0.githubusercontent.com:HSTS	13	18288	1611726777271,1,0,2
+avatars0.githubusercontent.com:HSTS	13	18288	1611727099069,1,0,2
 goreportcard.com:HSTS	0	18277	1610746979912,1,1,2
 wikimedia.org:HSTS	0	18283	1686053889242,1,1,2
 api.dashly.app:HSTS	0	18285	1611413698109,1,1,2

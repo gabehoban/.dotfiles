@@ -28,7 +28,7 @@ user_pref("app.update.lastUpdateTime.telemetry_modules_ping", 1579575784);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1580151400);
 user_pref("browser.bookmarks.editDialog.confirmationHintShowCount", 38);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
-user_pref("browser.cache.disk.amount_written", 488988);
+user_pref("browser.cache.disk.amount_written", 499230);
 user_pref("browser.cache.disk.capacity", 153600);
 user_pref("browser.cache.disk.filesystem_reported", 1);
 user_pref("browser.cache.disk.telemetry_report_ID", 2);
