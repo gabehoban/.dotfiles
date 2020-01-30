@@ -1,5 +1,7 @@
 # open terminal
-cmd - return : open -a iTerm ~/
+cmd - return : ttab -w -a iTerm2 -d ~ -q
+cmd + shift - r : brew services restart yabai
+cmd + shift - p : yabai -m space --balance
 
 # swap window
 shift + alt - left : yabai -m window --swap west

@@ -6,6 +6,8 @@
 	<true/>
 	<key>AboutToPasteTabsWithCancel_selection</key>
 	<integer>2</integer>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -301,7 +303,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>440 476 799 448 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>30 110 1620 855 0 0 1680 1027 </string>
+	<string>18 55 1644 951 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>12 110 816 866 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -890,7 +892,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>HackNerdFontCompleteM-Regular 20</string>
+			<string>JetBrainsMono-Bold 20</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -969,8 +971,8 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>FantasqueSansMono Nerd Font</string>
-		<string>FantasqueSansMono Nerd Font Mono</string>
+		<string>JetBrains Mono</string>
+		<string>JetBrains Mono Medium</string>
 		<string>InconsolataLGC Nerd Font</string>
 		<string>Hack Nerd Font Mono</string>
 	</array>
@@ -979,12 +981,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{405, 730}</string>
+		<string>{429, 839}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>22483C03-81F5-4F14-BAD2-7D5F13EE1CAF</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>27</integer>
+	<integer>42</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1753,7 +1755,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-27T04:40:30Z</date>
+	<date>2020-01-29T16:56:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
