@@ -1,35 +1,28 @@
-# autoload -U compinit && compinit
-
+autoload -U compinit && compinit
 COMPLETION_WAITING_DOTS="true"
 ENABLE_CORRECTION="true"
+gpgconf --launch gpg-agent
+
 export TERM="xterm-256color"
 export EDITOR='nano'
 export GPG_TTY="$(tty)"
-export HOMEBREW_GITHUB_API_TOKEN=7151aba422c97deb5a7063e8ed354b978cc2cc4e
 export HOMEBREW_TEMP=/usr/local/temp
-
-export PATH="/usr/local/sbin:$PATH"
-
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-export ZSH="/Users/gabehoban/.oh-my-zsh"
-gpgconf --launch gpg-agent
 
-source /Users/gabehoban/zsh/antigen.zsh
-antigen use oh-my-zsh
-antigen theme denysdovhan/spaceship-prompt
+## Plugins
+source ~/.zsh/antigen.zsh
+THEME=denysdovhan/spaceship-prompt 
+antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 antigen bundle git
-antigen bundle tmux
 antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle osx
-antigen bundle fzf
 antigen bundle git
 antigen bundle gem
 antigen bundle pip
-antigen bundle npm
 antigen bundle sudo
 antigen bundle xcode
 antigen bundle iterm2
@@ -43,13 +36,12 @@ antigen bundle colored-man-pages
 antigen bundle zsh-brew-services
 antigen bundle zsh-navigation-tools
 antigen bundle history-substring-search
-antigen bundle oow/macos
 antigen bundle zpm-zsh/colors
 antigen bundle Tarrasch/zsh-bd
 antigen bundle desyncr/auto-ls
 antigen bundle caarlos0/zsh-git-sync
 antigen bundle chrissicool/zsh-256color
-antigen bundle tarruda/zsh-autosuggestions                
+antigen bundle tarruda/zsh-autosuggestions
 antigen bundle felixr/docker-zsh-completion
 antigen bundle sindresorhus/pretty-time-zsh
 antigen bundle ascii-soup/zsh-url-highlighter
@@ -63,5 +55,6 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 alias ls="ls"
-
-source $ZSH/oh-my-zsh.sh
+alias nano='/usr/local/Cellar/nano/4.7/bin/nano --smooth --tabstospaces --linenumbers'
+alias dots='cd ~/.dotfiles && git add -A && git commit -m "update dotfiles" && git push origin master'
+clear
