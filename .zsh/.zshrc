@@ -54,7 +54,6 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 alias ls="ls"
-alias nano='/usr/local/Cellar/nano/4.7/bin/nano -M --tabstospaces'
 alias dots='cd ~/.dotfiles && git add -A && git commit -m "update dotfiles" && git push origin master'
 
 # Set Spaceship ZSH as a prompt
