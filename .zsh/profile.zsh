@@ -8,6 +8,7 @@ export GREP_OPTIONS="--color=auto";
 export LESS_TERMCAP_md="${yellow}";
 export GOPATH=~/go
 export GOBIN=~/go/bin
+. /usr/local/etc/profile.d/z.sh
 
 ## History Settings
 export HISTTIMEFORMAT="%c"
@@ -38,7 +39,10 @@ PATH="$HOME/.bin:$PATH"                        # Home bin
 PATH="$HOME/go/bin:$PATH"                      # Golang bin
 export PATH
 
+## Source dotfile utils
+. "$HOME"/.zsh/vault.zsh
+
 ## GPG Exports
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY="$(tty)"
-
+export KEYID=0x31CF14544585614A

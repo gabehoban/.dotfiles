@@ -73,9 +73,7 @@ sudo defaults write com.apple.screensaver askForPassword -int 1
 sudo defaults write com.apple.screensaver askForPasswordDelay -int 0
 sudo defaults write com.apple.security.revocation CRLStyle -string RequireIfPresent
 sudo defaults write com.apple.security.revocation OCSPStyle -string RequireIfPresent
-sudo defaults write com.apple.spotlight orderedItems -array '{"enabled" = 1;"name" = "APPLICATIONS";}'
 sudo defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
-sudo defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 sudo defaults write com.apple.terminal StringEncodings -array 4
 sudo defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -130,7 +128,7 @@ sudo systemsetup -setrestartfreeze on
 sudo systemsetup -settimezone "America/Detriot" > /dev/null
 sudo systemsetup -setusingnetworktime on 
 sudo touch /private/var/vm/sleepimage && sudo chflags uchg /private/var/vm/sleepimage
-osascript -e 'tell application "System Events" to tell every desktop to set picture to "~/.dotfiles/macOS/wallpaper.jpg"'
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/gabehoban/.dotfiles/macOS/wallpaper.png"'
 sudo killall Finder
 sudo killall Dock
 

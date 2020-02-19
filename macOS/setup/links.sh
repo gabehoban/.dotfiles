@@ -18,3 +18,5 @@ ln -sv ~/.dotfiles/.zsh ~
 ln -sv ~/.dotfiles/.zsh/.zshrc ~
 ## Local Bin
 ln -sv ~/.dotfiles/.bin ~
+## Setup system VAULT (GPG)
+ln -sv ~/.dotfiles/private/.gnupg ~
