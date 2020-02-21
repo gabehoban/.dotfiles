@@ -39,3 +39,5 @@ ssh-add ~/.ssh/id_rsa
 
 ## Setup iTerm
 cp ../iTerm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+
+gpg --recv $KEYID
