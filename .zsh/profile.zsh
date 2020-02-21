@@ -45,4 +45,4 @@ export PATH
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
-export KEYID=0x31CF14544585614A
+export KEYID=0x643624EC29CEA355
