@@ -1,21 +1,28 @@
 #!/bin/bash
-## For GPG encrypting sensitive dotfiles
 
-## Encrypt Vault File with GNUPG
-endot() {
-    cd ~/.dotfiles/vault
-    cp -r "$HOME"/vault "$HOME"/.dotfiles/vault
-    tar czf encrypted.tar.gz vault
-    gpg -er hobang1@udayton.edu encrypted.tar.gz
-    rm encrypted.tar.gz
-    rm -rdf vault
+gpgenc () {
+	file="${1}"
+	if [[ -d "$file" ]]; then
+    	    echo "$file is a directory... Creating compressed file"
+	    tar czf "$file".tar.gz "$file"
+	    file="$file".tar.gz
+	else
+    	    echo "$file is a File"
+	fi
+
+        output="$file".$(date +%s).enc
+        gpg --encrypt --armor --output ${output} -r "$KEYID" "$file" && echo "$file -> ${output}"
 }
 
-## Unencrypt Vault File with GNUPG
-dedot() {
-    cd ~/.dotfiles/vault
-    gpg -do encrypted.tar.gz encrypted.tar.gz.gpg
-    tar xvf encrypted.tar.gz
-    rm encrypted.tar.gz
-    mv -r vault ~/vault
+gpgdec () {
+        output=$(echo "${1}" | rev | cut -c16- | rev)
+        gpg --decrypt --output ${output} "${1}" && echo "${1} -> ${output}"
+	if [[ -f "${output}" ]]; then
+	    echo "${1} decrypted with no errors."
+	    rm -f "${1}"
+	else if [[ "${output}" == "*.tar.gz" ]]
+	    echo "${output} is a compressed file, decompressing now."
+	    tar xvf "$output"
+	    rm -f "$output"
+	fi
 }

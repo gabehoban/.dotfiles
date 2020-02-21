@@ -11,8 +11,7 @@ export GOBIN=~/go/bin
 . /usr/local/etc/profile.d/z.sh
 
 ## History Settings
-export HISTTIMEFORMAT="%c"
-SHELL_SESSION_HISTORY=0
+HIST_STAMPS="%d.%m.%y %H:%M:%S"
 HISTFILE=~/.zhistory
 setopt sharehistory
 setopt histappend
