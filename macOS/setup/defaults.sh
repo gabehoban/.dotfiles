@@ -1,14 +1,10 @@
 #!/bin/bash
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off >/dev/null 2>/dev/null
+sudo systemsetup -setcomputersleep Off > /dev/null
 sudo /usr/bin/sed -i '' 's/^flags:.*/flags:lo,ad,fd,fm,-all/' /etc/security/audit_control
-sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on - disabled until confirming with team
-sudo bash appleProof.sh
 sudo chflags nohidden ~/Library
 sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 sudo defaults write -g 'InitialKeyRepeat_Level_Saved' -int 10
-sudo defaults write .GlobalPreferences com.apple.mouse.scaling -1
 sudo defaults write /Library/Application\ Support/CrashReporter/DiagnosticMessagesHistory.plist AutoSubmit -int 0
 sudo defaults write /Library/Application\ Support/CrashReporter/DiagnosticMessagesHistory.plist ThirdPartyDataSubmit -int 0
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
@@ -21,7 +17,6 @@ sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist Automati
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "lil-baymax"
-sudo defaults write ~/Library/Preferences/com.apple.assistant.support.plist "Assistant Enabled" -int 0; killall -TERM Siri
 sudo defaults write ~/Library/Preferences/com.apple.Terminal SecureKeyboardEntry -bool true
 sudo defaults write com.apple.menuextra.battery ShowPercent YES
 sudo defaults write com.apple.ActivityMonitor IconType -int 5
@@ -100,8 +95,6 @@ sudo defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 sudo defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 sudo killall mds > /dev/null 2>&1
 sudo launchctl config system umask 022
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.auditd.plist
-sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 sudo mdutil -E / > /dev/null
 sudo mdutil -i on / > /dev/null
 sudo nvram boot-args="mbasd=1"
@@ -121,14 +114,11 @@ sudo scutil --set LocalHostName "lil-baymax"
 sudo sed -i '' 's/expire-after.*/expire-after:1G/g' /etc/security/audit_control
 sudo sed -i '' 's/flags.*/flags:lo,ad,fd,fm,-all/g' /etc/security/audit_control
 sudo spctl --master-disable
-sudo systemsetup -setcomputersleep Off > /dev/null
 sudo systemsetup -setnetworktimeserver "time.apple.com"
-sudo systemsetup -setremoteappleevents off >/dev/null 2>/dev/null
 sudo systemsetup -setrestartfreeze on
-sudo systemsetup -settimezone "America/Detriot" > /dev/null
+sudo systemsetup -settimezone "America/Detroit" > /dev/null
 sudo systemsetup -setusingnetworktime on 
 sudo touch /private/var/vm/sleepimage && sudo chflags uchg /private/var/vm/sleepimage
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/gabehoban/.dotfiles/macOS/wallpaper.png"'
 sudo killall Finder
-sudo killall Dock
 

@@ -4,9 +4,6 @@ sudo rm -f ~/.zshrc
 
 ## User Config Folder
 ln -sv ~/.dotfiles/.config ~
-## Visual Code Studio
-ln -sv ~/.dotfiles/.vscode ~
-ln -sv ~/.dotfiles/.vscode-insiders ~
 ## Github Stuff
 ln -sv ~/.dotfiles/git/.gitignore_global ~
 ln -sv ~/.dotfiles/git/.gitconfig ~
@@ -18,5 +15,13 @@ ln -sv ~/.dotfiles/.zsh ~
 ln -sv ~/.dotfiles/.zsh/.zshrc ~
 ## Local Bin
 ln -sv ~/.dotfiles/.bin ~
-## Setup system VAULT (GPG)
-ln -sv ~/.dotfiles/private/.gnupg ~
+## Setup GPG
+[ -d ~/.gnupg ] || mkdir -p ~/.gnupg
+ln -sv ~/.dotfiles/gnupg/dirmngr.conf ~/.gnupg
+ln -sv ~/.dotfiles/gnupg/gpg.conf ~/.gnupg
+## Setup VisualCodeStudio settings
+[ -d /Users/gabehoban/Library/Application\ Support/Code\ -\ Insiders/User ] || mkdir -p /Users/gabehoban/Library/Application\ Support/Code\ -\ Insiders/User
+ln -sv ~/.dotfiles/code/settings.json /Users/gabehoban/Library/Application\ Support/Code\ -\ Insiders/User
+## Setup iTerm Settings
+ln -sv ~/.dotfiles/iTerm2/com.googlecode.iterm2.plist ~/Library/Preferences/
+

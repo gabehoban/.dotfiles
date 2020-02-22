@@ -31,6 +31,7 @@ brew "findutils"
 brew "git-filter-repo"
 brew "git-secret"
 brew 'git-extras'
+brew "github/gh/gh"
 brew "gnupg"
 brew "golang"
 brew "grep"

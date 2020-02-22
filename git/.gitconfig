@@ -7,8 +7,9 @@
 [gpg]
 	program = gpg
 [core]
-	excludesfile = /Users/gabehoban/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	trustctime = false
+	excludesFile = /Users/gabehoban/.gitignore_global
 [color]
 	diff = auto
 	status = auto
@@ -32,3 +33,13 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[credential]
+	helper = osxkeychain
+[help]
+	autoCorrect = 1
+[branch]
+	autoSetupRebase = always
+[fetch]
+	prune = true
+[apply]
+	whitespace = fix

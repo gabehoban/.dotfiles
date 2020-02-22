@@ -2,42 +2,115 @@
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-## Set macOS system defaults and fonts
-$(pwd)/setup/defaults.sh
-cp -vf $(pwd)/fonts/*.ttf ~/Library/Fonts
+# -----------------------------------------------------------------------------
+# Preparation: Install Xcode command line tools
+# -----------------------------------------------------------------------------
+function xcodeCli {
+  echo "Installing command line developer tools ..."
+  xcode-select --install
+}
 
-## Setup Homebrew
-if test ! $(which brew); then
+# -----------------------------------------------------------------------------
+# Install package managers
+# -----------------------------------------------------------------------------
+function packageManagers {
   sudo mkdir /usr/local/temp
   sudo chown -R "$USER":admin /usr/local
-  echo "Installing homebrew..."
+  echo "Installing homebrew ..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-brew update
-brew upgrade --all
-brew tap homebrew/bundle
-brew bundle
-brew services start koekeishiya/formulae/skhd
-brew services start koekeishiya/formulae/yabai
 
-## Open apps for permissions
-open -a Paste
-open -a Brave\ Browser\ Nightly
-open -a The\ Unarchiver
-open -a Dropbox
-open -a Dozer
+  echo "Installing cask ..."
+  brew tap "homebrew/cask"
 
-## Symlink dotfiles
-$(pwd)/setup/links.sh
-npm install -g spaceship-prompt
-open -a iTerm
-chsh -s $(which zsh)
+  echo "Installing homebrew bundle"
+  brew tap "homebrew/bundle"
+}
 
-## Setup SSH
-ssh-keygen -t rsa -b 4096 -N "" -f ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_rsa
+# -----------------------------------------------------------------------------
+# Install software
+# -----------------------------------------------------------------------------
 
-## Setup iTerm
-cp ../iTerm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+function software {
+  echo "Installing software ..."
+  cd ~ && git clone https://github.com/gabehoban/.dotfiles
+  brew bundle --file="~/.dotfiles/macOS/Brewfile"
+  brew services start koekeishiya/formulae/skhd
+  brew services start koekeishiya/formulae/yabai
+  npm install -g spaceship-prompt
+}
 
-gpg --recv $KEYID
+# -----------------------------------------------------------------------------
+# Install Code extensions
+# -----------------------------------------------------------------------------
+
+function codeExtensions {
+  echo "Installing Code extensions ..."
+  while read -r extension
+  do
+    if [[ "$extension" =~ \#.+ ]]
+    then
+      echo "Skipping ${extension}"
+    else
+      code-insiders --install-extension "$extension"
+    fi
+  done < "~/.dotfiles/code/Codefile"
+}
+
+# -----------------------------------------------------------------------------
+# Setup Mac Defaults
+# -----------------------------------------------------------------------------
+
+function defaults {
+  sudo $(pwd)/setup/defaults.sh
+  cp -vf $(pwd)/fonts/*.ttf ~/Library/Fonts
+  chsh -s $(which zsh)
+}
+
+# -----------------------------------------------------------------------------
+# Setup GPG
+# -----------------------------------------------------------------------------
+function gpg {
+  gpg --recv 0x643624EC29CEA355
+}
+
+# -----------------------------------------------------------------------------
+# Link Files
+# -----------------------------------------------------------------------------
+function link {
+  $(pwd)/setup/links.sh
+}
+
+# -----------------------------------------------------------------------------
+# Setup SSH
+# -----------------------------------------------------------------------------
+function ssh {
+  gpg -d -o ~/ssh.tar.gz ~/.dotfiles/gnupg/crypt/ssh.tar.gz.gpg
+  tar -xzf /Users/gabehoban/ssh.tar.gz
+  mv ~/Users/gabehoban/.ssh ~/.ssh
+  rm -rdf ~/Users && rm -f ~/.ssh.tar.gz
+}
+
+# -----------------------------------------------------------------------------
+# Open apps to setup dock / licenseKeys
+# -----------------------------------------------------------------------------
+function open {
+  open -a Paste
+  open -a Brave\ Browser\ Nightly
+  open -a The\ Unarchiver
+  open -a Dropbox
+  open -a Dozer
+  open -a iTerm
+}
+
+# -----------------------------------------------------------------------------
+# RUN
+# -----------------------------------------------------------------------------
+xcodeCli
+packageManagers
+software
+link
+codeExtensions
+defaults
+gpg
+ssh
+open

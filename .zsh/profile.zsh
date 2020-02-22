@@ -40,7 +40,7 @@ export PATH
 
 ## Source dotfile utils
 . "$HOME"/.zsh/vault.zsh
-
+export BREWFILE="$HOME/.dotfiles/macOS/Brewfile"
 ## GPG Exports
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
