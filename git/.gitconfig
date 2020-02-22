@@ -8,13 +8,27 @@
 	program = gpg
 [core]
 	excludesfile = /Users/gabehoban/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	diff = auto
 	status = auto
 	branch = auto
+	ui = true
 [push]
   	default = current
 [rebase]
   	autosquash = true
 [alias]
 	yolo = !git add -A && git commit -m \"$(curl --silent --fail http://whatthecommit.com/index.txt)\"
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

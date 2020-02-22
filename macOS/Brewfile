@@ -28,7 +28,6 @@ brew "exa"
 brew "fd"
 brew "feh"
 brew "findutils"
-brew "git-delta"
 brew "git-filter-repo"
 brew "git-secret"
 brew 'git-extras'
