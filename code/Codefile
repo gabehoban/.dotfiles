@@ -3,13 +3,16 @@ adashen.vscode-tomcat
 arcticicestudio.nord-visual-studio-code
 ban.spellright
 bibhasdn.unique-lines
+christian-kohler.path-intellisense
 dgileadi.java-decompiler
+dnicolson.binary-plist
 dnlytras.nord-wave
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
 eyhn.vscode-vibrancy
 formulahendry.code-runner
 HookyQR.beautify
+ionutvmi.path-autocomplete
 ithildir.java-properties
 Pivotal.vscode-boot-dev-pack
 Pivotal.vscode-concourse
@@ -17,8 +20,9 @@ Pivotal.vscode-manifest-yaml
 Pivotal.vscode-spring-boot
 pverest.java-ide-pack
 redhat.java
-Shan.code-settings-sync
+shakram02.bash-beautify
 sharat.vscode-brewfile
+speedy37.ascii-plist
 stkb.rewrap
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
@@ -29,3 +33,4 @@ vscjava.vscode-maven
 vscjava.vscode-spring-boot-dashboard
 vscjava.vscode-spring-initializr
 YouMayCallMeV.vscode-java-saber
+zhouronghui.propertylist

@@ -1,0 +1,14 @@
+tap "bramstein/webfonttools"
+tap "cjbassi/gotop"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "kde-mac/kde"
+tap "sambadevi/powerlevel9k"
+tap 'colindean/fonts-nonfree'
+tap 'buo/cask-upgrade'
+tap 'koekeishiya/formulae'

@@ -1,0 +1,13 @@
+#!/bin/bash
+. ~/.dotfiles/macOS/Defaults/utils.sh
+
+print_in_purple "\n • Preferences\n"
+
+# We need to close `System Preferences` to avoid overriding the preferences that are being changed.
+
+./close_system_preferences_panes.applescript
+
+./dock.sh
+./time_machine.sh
+./trackpad.sh
+./ui_and_ux.sh

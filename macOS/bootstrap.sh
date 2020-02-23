@@ -33,10 +33,15 @@ function packageManagers {
 function software {
   echo "Installing software ..."
   cd ~ && git clone https://github.com/gabehoban/.dotfiles
-  brew bundle --file="~/.dotfiles/macOS/Brewfile"
+  brew bundle --file="~/.dotfiles/macOS/Brew/Tapfile"
+  brew bundle --file="~/.dotfiles/macOS/Brew/Brewfile"
+  brew bundle --file="~/.dotfiles/macOS/Brew/Caskfile"
   brew services start koekeishiya/formulae/skhd
   brew services start koekeishiya/formulae/yabai
   npm install -g spaceship-prompt
+  rm -f ~/Library/Preferences/com.apple.dock.plist
+  ln -sv ~/.dotfiles/macOS/dock ~/Library/Preferences/com.apple.dock.plist
+  killall Dock
 }
 
 # -----------------------------------------------------------------------------
@@ -61,7 +66,7 @@ function codeExtensions {
 # -----------------------------------------------------------------------------
 
 function defaults {
-  sudo $(pwd)/setup/defaults.sh
+  sudo $(pwd)/Defaults/defaults.sh
   cp -vf $(pwd)/fonts/*.ttf ~/Library/Fonts
   chsh -s $(which zsh)
 }

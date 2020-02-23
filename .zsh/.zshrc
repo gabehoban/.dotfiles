@@ -8,6 +8,7 @@ dotfiles=(
 	"$HOME"/.zsh/alias.zsh
 	"$HOME"/.zsh/antigen_plugins.zsh
 	"$HOME"/.zsh/spaceship_config.zsh
+	"$HOME"/.zsh/functions.zsh
 )
 for file in ${dotfiles[@]}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"

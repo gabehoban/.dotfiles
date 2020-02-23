@@ -8,6 +8,7 @@ export GREP_OPTIONS="--color=auto";
 export LESS_TERMCAP_md="${yellow}";
 export GOPATH=~/go
 export GOBIN=~/go/bin
+export LESS='-F -g -i -M -R -S -w -X -z-4'
 . /usr/local/etc/profile.d/z.sh
 
 ## History Settings
@@ -31,6 +32,7 @@ export HOMEBREW_TEMP=/usr/local/temp
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 export HOMEBREW_CASKS_OPTS=--require-sha
+export HOMEBREW_FORCE_BREWED_GIT=1
 
 ## Path Exports
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"    # Local bin
