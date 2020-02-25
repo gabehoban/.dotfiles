@@ -9,3 +9,4 @@ vscode-css-languageserver-bin
 vscode-html-languageserver-bin
 bash-language-server
 sass
+lnfs-cli
