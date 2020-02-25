@@ -160,13 +160,11 @@ function runAll(){
   node
   link
   codeExtensions
-  ruby
+  ruby_gems
   pip_install
   defaults
   gpg
   ssh
   open
 }
-node
-ruby_gems
-pip_install
+runAll
