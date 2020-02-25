@@ -44,3 +44,5 @@
 	prune = true
 [apply]
 	whitespace = fix
+[url "git@github.com:"]
+	insteadOf = https://github.com/
