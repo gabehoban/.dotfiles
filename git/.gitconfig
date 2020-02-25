@@ -16,8 +16,6 @@
 	status = auto
 	branch = auto
 	ui = true
-[push]
-	default = current
 [rebase]
   	autosquash = true
 [alias]
