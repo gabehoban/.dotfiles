@@ -1,0 +1,68 @@
+{
+  "entries": {
+    "tap": {
+      "bramstein/webfonttools": {
+        "revision": "094e4bd309d6618161baf9357bd10a27bb66c9ef"
+      },
+      "cjbassi/gotop": {
+        "revision": "9690a8c871be699b30806ce88b17cb234bcf4a11"
+      },
+      "homebrew/bundle": {
+        "revision": "04a8b37bbdd9bb801a5fde72fd82232846cf2b69"
+      },
+      "homebrew/cask": {
+        "revision": "d917d92552216aacdda1892e24d43b5c87eee5c1"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "654a0a8905a4d9e58fcb287a3143cf54a94fda06"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "fca9a79d88b9b9da43d47b0b959854fc8506ac69"
+      },
+      "homebrew/cask-versions": {
+        "revision": "89a9d19882f427d623fdb0df84b846188ad28cc0"
+      },
+      "homebrew/core": {
+        "revision": "ac6d14452798aa937ef88f9441516eb31d378597"
+      },
+      "homebrew/services": {
+        "revision": "9ddb42a9add6845053d098ffc4c568b55b70776e"
+      },
+      "kde-mac/kde": {
+        "revision": "b8ea04f29f6b3e1d078bdcce58bdb26eff21efe6"
+      },
+      "sambadevi/powerlevel9k": {
+        "revision": "5d606c1f420f867efe02478c205672b931521edc"
+      },
+      "colindean/fonts-nonfree": {
+        "revision": "90bb1c10e5ba194b961513da4668d8db8b7d31ed"
+      },
+      "buo/cask-upgrade": {
+        "revision": "e3b56e61aa7f9ea05bcde902b809f2a79cb206d7"
+      },
+      "koekeishiya/formulae": {
+        "revision": "e7801864f83a9cbb3db949481db92d367c1f65a4"
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "sierra": {
+        "HOMEBREW_VERSION": "2.2.6",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "ac6d14452798aa937ef88f9441516eb31d378597",
+        "CLT": "9.2.0.0.1.1510905681",
+        "Xcode": "9.2",
+        "macOS": "10.12.6"
+      },
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.6",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "ac6d14452798aa937ef88f9441516eb31d378597",
+        "CLT": "11.3.1.0.1.1576735732",
+        "Xcode": "11.3",
+        "macOS": "10.15.3"
+      }
+    }
+  }
+}

@@ -80,10 +80,14 @@ function software {
   brew bundle --file="~/.dotfiles/packages/brew/Tapfile"
   brew bundle --file="~/.dotfiles/packages/brew/Brewfile"
   brew bundle --file="~/.dotfiles/packages/brew/Caskfile"
+  brew bundle —-file=“~/.dotfiles/packages/brew/Masfile”
+
   brew services start koekeishiya/formulae/skhd
   brew services start koekeishiya/formulae/yabai
+  
   rm -f ~/Library/Preferences/com.apple.dock.plist
   ln -sv ~/.dotfiles/macOS/dock ~/Library/Preferences/com.apple.dock.plist
+  
   killall Dock
 }
 
@@ -109,7 +113,7 @@ function codeExtensions {
 # -----------------------------------------------------------------------------
 
 function defaults {
-  sudo $(pwd)/Defaults/defaults.sh
+  sudo $(pwd)/macOS/Defaults/defaults.sh
   cp -vf $(pwd)/fonts/*.ttf ~/Library/Fonts
   chsh -s $(which zsh)
 }
@@ -125,7 +129,7 @@ function gpg {
 # Link Files
 # -----------------------------------------------------------------------------
 function link {
-  $(pwd)/setup/links.sh
+  $(pwd)/macOS/setup/links.sh
 }
 
 # -----------------------------------------------------------------------------
@@ -162,9 +166,9 @@ function runAll(){
   codeExtensions
   ruby_gems
   pip_install
-  defaults
+  #defaults
   gpg
   ssh
   open
 }
-runAll
+defaults
