@@ -1,13 +1,1 @@
-certifi
-mypy
-chardet
-idna
-dnspython
-setuptools
-wheel
-libtmux
-django
-requests
-virtualenv
-six
-urllib3
+pynvim1

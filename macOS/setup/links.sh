@@ -1,6 +1,7 @@
 !/bin/bash
 
 sudo rm -f ~/.zshrc
+sudo rm -f ~/.config
 
 ## User Config Folder
 ln -sv ~/.dotfiles/.config ~

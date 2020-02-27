@@ -10,7 +10,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.errors.incompleteClasspath.severity": "ignore",
   "editor.fontSize": 18,
-  "workbench.colorTheme": "Nord",
   "editor.largeFileOptimizations": false,
   "code-runner.runInTerminal": true,
   "terminal.integrated.rendererType": "dom",
@@ -19,5 +18,6 @@
     "Caskfile*": "ruby"
   },
   "window.titleBarStyle": "native",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Nord"
 }

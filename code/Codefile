@@ -17,6 +17,7 @@ ionutvmi.path-autocomplete
 ithildir.java-properties
 Matsuyanagi.vscode-insert-beginning-of-line
 ms-vscode.Go
+NathanRidley.autotrim
 Pivotal.vscode-concourse
 Pivotal.vscode-manifest-yaml
 Pivotal.vscode-spring-boot
@@ -24,6 +25,7 @@ pverest.java-ide-pack
 redhat.java
 shakram02.bash-beautify
 sharat.vscode-brewfile
+shardulm94.trailing-spaces
 speedy37.ascii-plist
 stkb.rewrap
 VisualStudioExptTeam.vscodeintellicode
