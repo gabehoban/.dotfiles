@@ -48,6 +48,7 @@ export PATH
 export BREWFILE="$HOME/.dotfiles/packages/brew/Brewfile"
 export CASKFILE="$HOME/.dotfiles/packages/brew/Caskfile"
 export MASFILE="$HOME/.dotfiles/packages/brew/Masfile"
+export TAPFILE="$HOME/.dotfiles/packages/brew/Tapfile"
 export dots="$HOME/.dotfiles"
 
 

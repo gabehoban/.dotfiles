@@ -12,3 +12,4 @@ tap "sambadevi/powerlevel9k"
 tap 'colindean/fonts-nonfree'
 tap 'buo/cask-upgrade'
 tap 'koekeishiya/formulae'
+tap 'prbinu/touch2sudo'

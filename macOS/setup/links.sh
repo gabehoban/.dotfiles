@@ -2,9 +2,13 @@
 
 sudo rm -f ~/.zshrc
 sudo rm -f ~/.config
+sudo rm -f ~/Library/Application\ Support/MTMR/items.json
 
 ## User Config Folder
 ln -sv ~/.dotfiles/.config ~
+
+## MTMR
+ln -sv ~/.dotfiles/MTMR/items.json ~/Library/Application\ Support/MTMR/
 
 ## Github Stuff
 ln -sv ~/.dotfiles/git/.gitignore_global ~

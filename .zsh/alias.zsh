@@ -17,4 +17,6 @@ alias pip="pip3"
 alias python='python3'
 alias gpgme="gpg -e -r hobang1@udayton.edu"
 alias nano="vim"
+alias op='lsof -i | grep -E "(LISTEN|ESTABLISHED)"'
 alias v="vim"
+alias status="git status --porcelain"
