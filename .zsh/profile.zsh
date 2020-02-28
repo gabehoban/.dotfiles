@@ -38,6 +38,7 @@ fpath=("$HOMEBREW/share/zsh-completions" $fpath)
 fpath=("$HOMEBREW/share/zsh/site-functions" $fpath)
 
 ## Path Exports
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"    # Local bin
 PATH="$HOME/.bin:$PATH"                        # Home bin
 PATH="$HOME/go/bin:$PATH"                      # Golang bin
