@@ -27,5 +27,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ "$TMUX" = "" ]; then tmux; fi
-
+unsetopt PROMPT_SP
 export PATH="/usr/local/opt/openjdk/bin:$PATH"

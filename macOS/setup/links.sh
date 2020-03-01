@@ -37,6 +37,5 @@ ln -sv ~/.dotfiles/code/settings.json /Users/gabehoban/Library/Application\ Supp
 ## Setup iTerm Settings
 ln -sv ~/.dotfiles/iTerm2/com.googlecode.iterm2.plist ~/Library/Preferences/
 
-## macOS Privoxy config
-ln -sv ~/.dotfiles/privoxy/config /usr/local/etc/privoxy/
-ln -sv ~/.dotfiles/privoxy/user.action /usr/local/etc/privoxy/
+## Setup tmux settings
+ln -sv ~/.dotfiles/tmux/.tmux.conf ~

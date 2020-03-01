@@ -6,7 +6,7 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.lineHeight": 1.2,
   "editor.fontLigatures": true,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
   "prettier.singleQuote": true,
   "files.insertFinalNewline": true,
@@ -19,7 +19,6 @@
   "editor.tabCompletion": "on",
   "editor.trimAutoWhitespace": true,
   "editor.snippetSuggestions": "top",
-  "workbench.sideBar.location": "left",
   "editor.suggestSelection": "first",
   "java.errors.incompleteClasspath.severity": "ignore",
   "editor.fontSize": 18,
@@ -50,7 +49,7 @@
   "java.codeGeneration.hashCodeEquals.useInstanceof": true,
   "java.codeGeneration.toString.skipNullValues": true,
   "java.codeGeneration.useBlocks": true,
-  "workbench.colorTheme": "DVLPR",
+  // "workbench.colorTheme": "DVLPR",
   "extensions.ignoreRecommendations": true,
   "editor.codeActionsOnSave": {
     // For ESLint
@@ -60,5 +59,71 @@
     // For Stylelint
     "source.fixAll.stylelint": true
   },
-  "window.zoomLevel": 1
+  "zenMode.fullScreen": false,
+  "workbench.colorCustomizations": {
+    "[One Dark Pro (Italic)]": {
+      "editor.background": "#282c34"
+    },
+    "[Palenight Theme]": {
+      "editorOverviewRuler.addedForeground": "#0000",
+      "editorOverviewRuler.modifiedForeground": "#0000",
+      "editorOverviewRuler.deletedForeground": "#0000",
+      "editorOverviewRuler.border": "#0000",
+      "editorOverviewRuler.wordHighlightForeground": "#0000",
+      "editorOverviewRuler.errorForeground": "#0000",
+      "editorOverviewRuler.warningForeground": "#0000",
+      "editorOverviewRuler.infoForeground": "#0000",
+      "editorOverviewRuler.selectionHighlightForeground": "#f000",
+      "editor.selectionHighlightBorder": "#f000",
+      "editorGroupHeader.tabsBackground": "#31364A",
+      "tab.border": "#31364A",
+      "editorGroupHeader.noTabsBackground": "#292D3E",
+      "activityBar.background": "#292D3E",
+      "activityBar.border": "#292D3E",
+      "titleBar.activeBackground": "#292D3E",
+      "titleBar.inactiveBackground": "#292D3E"
+    },
+    "[Field Lights]": {
+      "titleBar.activeBackground": "#212733",
+      "titleBar.inactiveBackground": "#212733",
+      "titleBar.border": "#212733"
+    },
+    "[Forest Night]": {
+      "editorGroupHeader.noTabsBackground": "#3c4c55"
+    }
+  },
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "right",
+  "window.title": "",
+  "editor.cursorSmoothCaretAnimation": true,
+  "zenMode.centerLayout": false,
+  "zenMode.restore": true,
+  "breadcrumbs.filePath": "off",
+  "explorer.confirmDragAndDrop": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment.line.double-slash",
+          "comment",
+          "string.quoted",
+          "storage.type.function.arrow.js",
+          "variable.language.default.js",
+          "variable.other.module.js",
+          "keyword.operator.relational.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+      //    {
+      //        "scope": "variable.other.module.js",
+      //        "settings": {
+      //            "foreground": "#bfc7d5ff",
+      //        }
+      //    }
+    ]
+  },
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Palenight Theme"
 }

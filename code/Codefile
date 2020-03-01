@@ -41,3 +41,4 @@ code-insiders --install-extension sharat.vscode-brewfile
 code-insiders --install-extension speedy37.ascii-plist
 code-insiders --install-extension streetsidesoftware.code-spell-checker
 code-insiders --install-extension tomoki1207.pdf
+code-insiders --install-extension whizkydee.material-palenight-theme
