@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo -v
+
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # -----------------------------------------------------------------------------
@@ -18,10 +19,10 @@ function packageManagers {
     sudo chown -R "$USER":admin /usr/local
     echo "Installing homebrew ..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    
+
     echo "Installing cask ..."
     brew tap "homebrew/cask"
-    
+
     echo "Installing homebrew bundle"
     brew tap "homebrew/bundle"
 }
@@ -34,7 +35,7 @@ function node {
     mkdir -p ~/.npm-global
     npm install -g n
     n latest
-    
+
     apps=$(cat "/Users/gabehoban/.dotfiles/packages/node/npm.txt")
     for app in $apps; do
         command -v "$app" > /dev/null
@@ -63,7 +64,7 @@ function ruby_gems {
     curl -sSL https://get.rvm.io | bash -s stable --rails
     source /Users/gabehoban/.rvm/scripts/rvm
     gems=$(cat "$HOME"/.dotfiles/packages/ruby/gems.txt)
-    
+
     echo 'Installing Ruby gems'
     for gem in $gems; do
         gem install "$gem"
@@ -83,10 +84,10 @@ function software {
     brew bundle —-file="~/.dotfiles/packages/brew/Masfile"
     brew cleanup
     brew style
-    
+
     rm -f ~/Library/Preferences/com.apple.dock.plist
     ln -sv ~/.dotfiles/macOS/dock ~/Library/Preferences/com.apple.dock.plist
-    
+
     killall Dock
 }
 

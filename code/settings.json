@@ -21,7 +21,6 @@
   "editor.snippetSuggestions": "top",
   "workbench.sideBar.location": "left",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.errors.incompleteClasspath.severity": "ignore",
   "editor.fontSize": 18,
   "editor.largeFileOptimizations": false,
@@ -31,25 +30,35 @@
     "Tapfile*": "ruby",
     "Caskfile*": "ruby"
   },
-  "beautify.onSave": true,
   "window.titleBarStyle": "native",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.tree.showScanModeButton": false,
   "todo-tree.highlights.enabled": true,
   "cSpell.userWords": [
+    "Balrog",
+    "Cyberdeamon",
+    "Cyberdemon",
     "Hoban",
+    "cout",
+    "hitpoints",
     "hobang"
   ],
-  "trailing-spaces.trimOnSave": true,
   "javascript.format.insertSpaceAfterConstructor": true,
   "editor.wrappingIndent": "deepIndent",
-  "rewrap.reformat": true,
-  "boot-java.live-information.automatic-tracking.on": true,
-  "boot-java.scan-java-test-sources.on": true,
   "java.codeGeneration.generateComments": true,
   "java.codeGeneration.hashCodeEquals.useInstanceof": true,
   "java.codeGeneration.toString.skipNullValues": true,
   "java.codeGeneration.useBlocks": true,
-  "workbench.colorTheme": "DVLPR"
+  "workbench.colorTheme": "DVLPR",
+  "extensions.ignoreRecommendations": true,
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "window.zoomLevel": 1
 }

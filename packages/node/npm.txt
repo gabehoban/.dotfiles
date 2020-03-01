@@ -11,3 +11,7 @@ sass
 lnfs-cli
 gtop
 standard
+prettier-plugin-java
+prettier-eslint
+eslint-config-eslint
+eslint-plugin-unicorn

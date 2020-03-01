@@ -4,14 +4,14 @@ gpgconf --launch gpg-agent
 ## Dotfiles
 export HOME='/Users/gabehoban'
 dotfiles=(
-	"$HOME"/.zsh/profile.zsh
-	"$HOME"/.zsh/alias.zsh
-	"$HOME"/.zsh/antigen_plugins.zsh
-	"$HOME"/.zsh/spaceship_config.zsh
-	"$HOME"/.zsh/functions.zsh
+    "$HOME"/.zsh/profile.zsh
+    "$HOME"/.zsh/alias.zsh
+    "$HOME"/.zsh/antigen_plugins.zsh
+    "$HOME"/.zsh/spaceship_config.zsh
+    "$HOME"/.zsh/functions.zsh
 )
 for file in ${dotfiles[@]}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+    [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
 unset dotfiles
@@ -25,3 +25,7 @@ clear; lastlogin #; ufetch-macos
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ "$TMUX" = "" ]; then tmux; fi
+
+export PATH="/usr/local/opt/openjdk/bin:$PATH"

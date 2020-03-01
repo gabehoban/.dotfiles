@@ -11,19 +11,19 @@
         "revision": "0796bb72fa0b6615cdb51d0ec07ca405e4550870"
       },
       "homebrew/cask": {
-        "revision": "233dc7897f7455038028d5cae2041bf8063644b0"
+        "revision": "f954ec14f3baf82ce4f71056e266d67c9b78f80b"
       },
       "homebrew/cask-drivers": {
-        "revision": "bf7cc3aafa7deb4b84ac034494df2e0275273b92"
+        "revision": "92af7e1dd95bd6378c128c14550cb181ce646607"
       },
       "homebrew/cask-fonts": {
-        "revision": "fca9a79d88b9b9da43d47b0b959854fc8506ac69"
+        "revision": "4b639dae64056fa794ddc593cb2e2f7fd7ee5f16"
       },
       "homebrew/cask-versions": {
-        "revision": "cbad5c2f294e4cb783f4cb8085b2bf4692cd386e"
+        "revision": "9dff24d198dbfc34e330975d417a15c44b18bdd1"
       },
       "homebrew/core": {
-        "revision": "52c1f611c110ac8bc37f6f2422d3629b45d7eb76"
+        "revision": "5c961940b126c9958c1a9ae889aa4676d2e1b794"
       },
       "homebrew/services": {
         "revision": "9ddb42a9add6845053d098ffc4c568b55b70776e"
@@ -45,6 +45,9 @@
       },
       "prbinu/touch2sudo": {
         "revision": "25b0539a1ba1410d614424d84097e364a0980c13"
+      },
+      "epk/epk": {
+        "revision": "74ef3c1a4e2541bbc008bc33431d8256fab5e144"
       }
     }
   },
@@ -61,7 +64,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.6",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "52c1f611c110ac8bc37f6f2422d3629b45d7eb76",
+        "Homebrew/homebrew-core": "5c961940b126c9958c1a9ae889aa4676d2e1b794",
         "CLT": "11.3.1.0.1.1576735732",
         "Xcode": "11.3",
         "macOS": "10.15.3"

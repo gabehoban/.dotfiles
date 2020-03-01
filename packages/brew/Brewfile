@@ -103,3 +103,9 @@ brew "zsh"
 brew "terminal-notifier"
 brew 'transmission-nightly'
 brew 'shellshock'
+brew 'pmd'
+brew 'eslint'
+brew 'checkstyle'
+brew 'tmux'
+brew 'nvim'
+brew 'fontforge'
