@@ -1,12 +1,12 @@
 [user]
 	email = ghoban14@gmail.com
 	name = Gabe Hoban
-	signingkey = 643624EC29CEA355
+	signingkey = 6274BD5B1EA9AEBF4A6C399D643624EC29CEA355
 [commit]
-	gpgsign = false
+	gpgsign = true
 	verbose = true
 [gpg]
-	program = gpg
+	program = /usr/local/bin/gpg
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	trustctime = false
@@ -39,8 +39,11 @@
 	prune = true
 [apply]
 	whitespace = fix
-
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [pull]
 	rebase = true
+[mergetool]
+	keepBackup = true
+[tag]
+	forceSignAnnotated = true

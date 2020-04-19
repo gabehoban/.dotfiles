@@ -1,35 +1,5 @@
 #!/bin/bash
 
-dbrew() {
-    if [[ $@ = *"cask"* ]]; then
-        prefix="cask "
-        prefix2="install "
-        if [[ $(echo "$@" | sed -e "s/^$prefix//") = *" "* ]]; then
-            for program in $(echo "$@" | sed -e "s/^$prefix//" | sed -e "s/^$prefix2//")
-            do
-                echo "cask '$program'" >> ~/.dotfiles/macOS/Brew/Caskfile
-                echo "$program added to Caskfile"
-            done
-        else
-            echo "cask '$string'" >> ~/.dotfiles/macOS/Brew/Caskfile
-            echo "$string added to Caskfile"
-        fi
-        brew $@
-    else
-        prefix="install "
-        if [[ $(echo "$@" | sed -e "s/^$prefix//") = *" "* ]]; then
-            for program in $(echo "$@" | sed -e "s/^$prefix//")
-            do
-                echo "brew '$program'" >> ~/.dotfiles/macOS/Brew/Brewfile
-                echo "$program added to Brewfile"
-            done
-        else
-            echo "brew '$string'" >> ~/.dotfiles/macOS/Brew/Brewfile
-            echo "$string added to Brewfile"
-        fi
-        brew $@
-    fi
-}
 extract() {
     if [ -f $1 ]; then
         case $1 in
@@ -55,15 +25,15 @@ extract() {
 }
 
 bs() {
-	SELECTED_PKGS="$(brew search --formulae | fzf --header='Install packages' -m --height 100% --preview 'brew info {1}')"
-	if [ -n "$SELECTED_PKGS" ]; then
-		brew install $(echo $SELECTED_PKGS) -v
-	fi
+    SELECTED_PKGS="$(brew search --formulae | fzf --header='Install packages' -m --height 100% --preview 'brew info {1}')"
+    if [ -n "$SELECTED_PKGS" ]; then
+        brew install $(echo $SELECTED_PKGS) -v
+    fi
 }
 
 bcs() {
-	SELECTED_PKGS="$(brew search --cask | fzf --header='Install applications' -m --height 100% --preview 'brew info {1}')"
-	if [ -n "$SELECTED_PKGS" ]; then
-		brew cask install $(echo $SELECTED_PKGS) -v
-	fi
+    SELECTED_PKGS="$(brew search --cask | fzf --header='Install applications' -m --height 100% --preview 'brew info {1}')"
+    if [ -n "$SELECTED_PKGS" ]; then
+        brew cask install $(echo $SELECTED_PKGS) -v
+    fi
 }
