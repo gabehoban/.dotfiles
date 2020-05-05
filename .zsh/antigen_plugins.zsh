@@ -10,7 +10,6 @@ antigen bundles <<EOB
 	git
 	iterm2
 	lazyload
-	MikeDacre/careful_rm
 	qoomon/zsh-lazyload
 	marzocchi/zsh-notify
 	pip
@@ -26,8 +25,5 @@ antigen bundles <<EOB
 	zpm-zsh/colors
 	zsh-brew-services
 	zsh-users/zsh-autosuggestions
-	zsh-users/zsh-history-substring-search
-	zsh-users/zsh-syntax-highlighting
-
 EOB
 antigen apply

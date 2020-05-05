@@ -38,3 +38,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/gabehoban/.sdkman"
 [[ -s "/Users/gabehoban/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/gabehoban/.sdkman/bin/sdkman-init.sh"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh

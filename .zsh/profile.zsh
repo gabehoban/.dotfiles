@@ -41,9 +41,6 @@ fpath=("$HOMEBREW/share/zsh/site-functions" $fpath)
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH" # GNU tools bin
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"    # Local bin
 PATH="$HOME/.bin:$PATH"                        # Home bin
-PATH="$HOME/.rvm/bin:$PATH"                    # RVM script
-PATH="$HOME/.cargo/bin:$PATH"
-PATH="$HOME/marven/bin:$PATH"
 export GOPATH="$HOME/go"                       # Golang Path
 PATH="$GOPATH/bin:$PATH"                       # Golang bin
 export PATH
@@ -54,10 +51,7 @@ export BREWFILE="$HOME/.dotfiles/packages/brew/Brewfile"
 export CASKFILE="$HOME/.dotfiles/packages/brew/Caskfile"
 export MASFILE="$HOME/.dotfiles/packages/brew/Masfile"
 export TAPFILE="$HOME/.dotfiles/packages/brew/Tapfile"
-export GEMFILE="$HOME/.dotfiles/packages/ruby/gems.txt"
-export GOFILE="$HOME/.dotfiles/packages/go/packages.txt"
 export NODEFILE="$HOME/.dotfiles/packages/node/npm.txt"
-export PIPFILE="$HOME/.dotfiles/packages/python/requirements.txt"
 export dots="$HOME/.dotfiles"
 
 ## GPG Exports
