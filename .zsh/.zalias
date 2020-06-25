@@ -1,6 +1,7 @@
 if which hub &> /dev/null; then
   alias git='hub'
 fi
+
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias cp='cp -iv'
 alias mkdir='mkdir -pv'

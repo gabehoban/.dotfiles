@@ -7,6 +7,7 @@ pathadd() {
 ###########
 PATH=/usr/local/bin:/usr/local/sbin":$PATH"
 pathadd $HOME/.local/bin
+pathadd $HOME/bin
 
 export TERM="xterm-256color"
 export EDITOR='nvim'
