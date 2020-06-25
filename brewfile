@@ -26,6 +26,8 @@ brew "openssl@1.1"
 brew "antigen"
 brew "antiword"
 brew "aria2"
+brew "ascii"
+brew "asciitex"
 brew "autoconf"
 brew "automake"
 brew "bash-completion@2"
@@ -58,6 +60,7 @@ brew "fontforge"
 brew "fzf"
 brew "gcc"
 brew "ghc"
+brew "git"
 brew "git-extras"
 brew "git-filter-repo"
 brew "git-lfs"
@@ -122,6 +125,7 @@ brew "ssh-vault"
 brew "terminal-notifier"
 brew "tig"
 brew "tmux"
+brew "toilet"
 brew "trash"
 brew "tree"
 brew "tty-clock"
@@ -202,10 +206,11 @@ cask "transmission-nightly"
 cask "visual-studio-code-insiders"
 cask "webpquicklook"
 mas "Apple Configurator 2", id: 1037126344
-mas "DevCleaner", id: 1388020431
+mas "DuckDuckGo Privacy Essentials", id: 1482920575
 mas "Keynote", id: 409183694
 mas "NextDNS", id: 1464122853
+mas "PiPifier", id: 1160374471
 mas "Pocket", id: 568494494
 mas "RunCat", id: 1429033973
 mas "Snappy", id: 512617038
-mas "Table Tool", id: 1122008420
+mas "Tampermonkey", id: 1482490089

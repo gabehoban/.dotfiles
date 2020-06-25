@@ -65,7 +65,7 @@ link() {
     from="$1"
     to="$2"
     echo -e "\\033[1;34m-> Linking '$from' to '$to'\\033[0m"
-    rm -f "$to"
+    rm -rdf "$to"
     ln -s "$from" "$to"
 }
 
@@ -96,7 +96,7 @@ chsh -s $(which zsh)
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)LIL-BAYMAX: Recieving GPG Key.$(tput sgr 0)"
 echo "---------------------------------------------------------"
-gpg --recv 0x643624EC29CEA355
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 0x643624EC29CEA355
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)LIL-BAYMAX: Decrypting SSH Files.$(tput sgr 0)"

@@ -1,17 +1,17 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-brew update && \
-brew upgrade --force-bottle && \
-brew cleanup && \
-brew cask upgrade && \
-brew prune
+echo -e "\\033[1;34mStarting Homebrew Backup...\\033[0m"
 
-brew bundle dump --file=~/.dotfiles/brewfile.update
-/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker ~/.dotfiles/brewfile ~/.dotfiles/brewfile.update
-rm ~/.dotfiles/brewfile.update
+echo -e "\\033[1;34m-> (1/4) Brew Update\\033[0m"
+brew update &>/tmp/upbrew1.log
+echo -e "\\033[1;34m-> (2/4) Brew Upgrade\\033[0m"
+brew upgrade &>/tmp/upbrew1.log
+echo -e "\\033[1;34m-> (3/4) Brew Cleanup\\033[0m"
+brew cleanup &>/tmp/upbrew1.log
+echo -e "\\033[1;34m-> (4/4) Brew Cask Upgrade\\033[0m"
+brew cask upgrade &>/tmp/upbrew1.log
 
-# Push updates
-cd ~/.dotfiles
-git add brewfile
-git commit -m "Automated brew update.."
-git push origin master
+rm -rdf "$HOME"/.dotfiles/brewfile >/dev/null
+brew bundle dump --file="$HOME"/.dotfiles/brewfile
+
+echo -e "\\033[1;34mDone...\\033[0m"

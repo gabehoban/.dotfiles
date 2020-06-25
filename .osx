@@ -39,6 +39,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
@@ -52,7 +54,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "lil-baymax"
 sudo nvram SystemAudioVolume=" "
 sudo pmset -a autopoweroff 0
-sudo pmset -a destroyfvkeyonstandby 1
+sudo pmset -a standbydelay 86400
 sudo pmset -a hibernatemode 0
 sudo pmset -a lidwake 1
 
