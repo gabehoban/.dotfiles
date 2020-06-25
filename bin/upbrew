@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-brew -v update && \
+brew update && \
 brew upgrade --force-bottle && \
 brew cleanup && \
 brew cask upgrade && \
